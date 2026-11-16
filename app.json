@@ -1,8 +1,10 @@
+
 {
   "expo": {
     "name": "KitchenKeeper",
     "slug": "KitchenKeeper",
     "version": "1.0.0",
+    "scheme": "kitchenkeeper",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -19,6 +21,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/kitchenkeeper-logo.png",
+          "imageWidth": 100,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFF9F0"
+        }
+      ]
+    ]
   }
 }
+
